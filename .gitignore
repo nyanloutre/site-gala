@@ -1,1 +1,8 @@
 env/
+static
+__pycache__
+gala/settings.py
+/media
+/scripts
+.DS_Store
+db.sqlite3

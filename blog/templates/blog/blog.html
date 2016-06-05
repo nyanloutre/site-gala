@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load markdown_deux_tags %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+
+    {% for article in articles %}
+
+    <h1>{{article.title}}</h1>
+
+    {% markdown %}
+    {{article.content}}
+    {% endmarkdown %}
+
+    {% endfor %}
+
+    </body>
+</html>
