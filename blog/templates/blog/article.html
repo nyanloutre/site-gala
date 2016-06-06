@@ -6,18 +6,11 @@
     </head>
     <body>
 
-
-    {% for article in articles %}
-
-    <a href="{{article.get_absolute_url}}">
-        <h1>{{article.title|title}}</h1>
-    </a>
+    <h1>{{article.title}}</h1>
 
     {% markdown %}
     {{article.content}}
     {% endmarkdown %}
-
-    {% endfor %}
 
     </body>
 </html>

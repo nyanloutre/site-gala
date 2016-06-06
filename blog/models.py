@@ -22,3 +22,6 @@ class Article(models.Model):
     def save(self, *args, **kwargs):
         SlugUnique.unique_slugify(self, self.title)
         super(Article, self).save(*args, **kwargs)
+
+    def get_absolute_url(self):
+        return reverse('article', args=[self.slug])
