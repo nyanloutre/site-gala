@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load markdown_deux_tags %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+    <h1>{{content.title}}</h1>
+
+    {% markdown %}
+    {{content.content}}
+    {% endmarkdown %}
+
+    </body>
+</html>

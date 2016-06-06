@@ -3,3 +3,4 @@ pillow
 django-gravatar2
 django-markdownx
 django-markdown-deux
+django-ordered-model
