@@ -1,0 +1,8 @@
+<p>
+    <a href="{{nav.path}}"> Home</a>
+    {% for page in nav.pages %}
+
+    <a href="{{page.get_absolute_url}}">{{page.title}}</a>
+
+    {% endfor %}
+</p>

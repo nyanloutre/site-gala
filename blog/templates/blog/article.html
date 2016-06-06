@@ -1,16 +1,10 @@
-<!DOCTYPE html>
+{% extends "BaseBlog.html" %}
 {% load markdown_deux_tags %}
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-    </head>
-    <body>
+
+{% block body %}
 
     <h1>{{article.title}}</h1>
 
-    {% markdown %}
-    {{article.content}}
-    {% endmarkdown %}
+    {{article.content|markdown}}
 
-    </body>
-</html>
+{% endblock %}

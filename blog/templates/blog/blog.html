@@ -1,23 +1,15 @@
-<!DOCTYPE html>
+{% extends "BaseBlog.html" %}
 {% load markdown_deux_tags %}
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-    </head>
-    <body>
 
-
+{% block body %}
     {% for article in articles %}
 
     <a href="{{article.get_absolute_url}}">
         <h1>{{article.title|title}}</h1>
     </a>
 
-    {% markdown %}
-    {{article.content}}
-    {% endmarkdown %}
+    {{article.content|markdown}}
 
     {% endfor %}
 
-    </body>
-</html>
+{% endblock %}

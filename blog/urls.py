@@ -2,7 +2,7 @@
 # @Author: klmp200
 # @Date:   2016-06-04 23:24:06
 # @Last Modified by:   klmp200
-# @Last Modified time: 2016-06-06 16:33:05
+# @Last Modified time: 2016-06-06 23:23:21
 
 from django.conf.urls import patterns, url
 
