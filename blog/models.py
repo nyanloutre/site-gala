@@ -42,7 +42,6 @@ class Page(OrderedModel):
         ordering = ('order',)
 
     def __str__(self):
-        self.bottom()
         return self.title
 
     def save(self, *args, **kwargs):
