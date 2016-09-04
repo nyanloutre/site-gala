@@ -2,10 +2,11 @@
 * @Author: klmp200
 * @Date:   2016-07-06 15:42:59
 * @Last Modified by:   klmp200
-* @Last Modified time: 2016-07-10 22:20:06
+* @Last Modified time: 2016-08-01 14:49:20
 */
 
 @import 'https://fonts.googleapis.com/css?family=Raleway';
+@import 'https://fonts.googleapis.com/css?family=Cinzel';
 
 body {
 	background-image: url("/static/blog/img/background.png");
@@ -74,6 +75,7 @@ hr {
 
 .chrono {
 	background-color: #5A6AFF;
+	font-family: 'Cinzel', serif;
 	color: #ffffff;
 	font-size: 3.5em;
 }
@@ -81,6 +83,12 @@ hr {
 .days {
 	font-weight: bold;
 	color: black;
+}
+
+.logo {
+	background-color: rgba(255, 255, 255, 0.8);
+	min-width: 100%;
+	max-height: 300px;
 }
 
 
