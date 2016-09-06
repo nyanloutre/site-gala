@@ -2,14 +2,14 @@
 * @Author: klmp200
 * @Date:   2016-07-06 15:42:59
 * @Last Modified by:   klmp200
-* @Last Modified time: 2016-08-01 14:49:20
+* @Last Modified time: 2016-09-06 15:28:40
 */
 
 @import 'https://fonts.googleapis.com/css?family=Raleway';
 @import 'https://fonts.googleapis.com/css?family=Cinzel';
 
 body {
-	background-image: url("/static/blog/img/background.png");
+	background-image: url("/gala/static/blog/img/background.png");
 	background-repeat: repeat;
 	background-attachment: fixed;
 	font-family: 'Roboto', sans-serif;
