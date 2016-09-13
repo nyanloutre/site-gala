@@ -17,7 +17,7 @@
 	<body>
 
 		<div class="row">
-			<div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8">
+			<div class="col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
 				{# Bannière #}
 				<div class="row-fluid hidden-lg">
 					<img class="img-responsive logo" src="{% static "blog/img/banderole.png" %}">
@@ -47,16 +47,16 @@
 		<div class="row">
 
 			{# Liens sociaux desktop #}
-			<div class="col-sm-2 col-xs-1">
+			<div class="col-md-2 col-sm-1">
 
-				<div class="hidden-xs">
+				<div class="hidden-sm hidden-xs">
 					{% include "blog/media.html" %}
 				</div>
 
 			</div>
 
 			{# contenu #}
-			<div class="col-sm-8 col-xs-10">
+			<div class="col-xs-offset-1 col-sm-offset-0 col-md-8 col-xs-10">
 
 				<div class="container-fluid content">
 					<div class="row">
@@ -75,7 +75,7 @@
 				</div>
 
 				{# Liens sociaux mobile #}
-				<div class="container-fluid visible-xs">
+				<div class="container-fluid visible-xs visible-sm">
 					<br>
 					{% include "blog/media.html" %}
 				</div>
