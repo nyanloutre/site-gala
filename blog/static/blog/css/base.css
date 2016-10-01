@@ -2,14 +2,14 @@
 * @Author: klmp200
 * @Date:   2016-07-06 15:42:59
 * @Last Modified by:   klmp200
-* @Last Modified time: 2016-09-06 15:28:40
+* @Last Modified time: 2016-10-02 01:10:11
 */
 
 @import 'https://fonts.googleapis.com/css?family=Raleway';
 @import 'https://fonts.googleapis.com/css?family=Cinzel';
 
 body {
-	background-image: url("/gala/static/blog/img/background.png");
+	background-image: url("/gala/static/blog/img/background.jpg");
 	background-repeat: repeat;
 	background-attachment: fixed;
 	font-family: 'Roboto', sans-serif;
@@ -17,7 +17,8 @@ body {
 
 .content {
 	background-color: #eee;
-	border: 3px #b2810e solid;
+	border-radius: 10px;
+	// border: 3px #b2810e solid;
 }
 
 #content {
@@ -27,6 +28,10 @@ body {
 
 .article {
 	// border-top: 3px black solid;
+}
+
+#footer {
+	border-radius: 0 0 10px 10px;
 }
 
 .credit {
@@ -74,7 +79,7 @@ hr {
 }
 
 .chrono {
-	background-color: #5A6AFF;
+	// background-color: #5A6AFF;
 	font-family: 'Cinzel', serif;
 	color: #ffffff;
 	font-size: 3.5em;
@@ -82,13 +87,19 @@ hr {
 
 .days {
 	font-weight: bold;
-	color: black;
+	// color: black;
+	// color: #5A6AFF;
+	color: #ffffff;
 }
 
 .logo {
-	background-color: rgba(255, 255, 255, 0.8);
+	// background-color: rgba(255, 255, 255, 0.8);
 	min-width: 100%;
-	max-height: 300px;
+	max-height: 350px;
+}
+
+#logo-mini {
+	margin-bottom: 60px;
 }
 
 
@@ -132,6 +143,18 @@ hr {
 .facebook:hover {
 	color: #2E3D54;
 	background-color: #ffffff;
+}
+
+@media (min-width: 992px) {
+	.social-mini {
+		padding: 20px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.social-mini {
+		// padding: 40px;
+	}
 }
 
 /*
