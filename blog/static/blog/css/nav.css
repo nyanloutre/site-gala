@@ -3,7 +3,7 @@
 * @Date:   2016-07-10 16:06:30
 * @Last Modified by:   klmp200
 <<<<<<< HEAD
-* @Last Modified time: 2016-10-02 20:55:56
+* @Last Modified time: 2016-10-02 21:26:21
 =======
 * @Last Modified time: 2016-10-02 18:22:12
 >>>>>>> 341e7a94e5a4e2db16db4201f1603b9c9425c705
@@ -11,7 +11,10 @@
 
 #navbar {
   border-radius: 10px 10px 0 0;
-  font-size: 1.5em;
+  font-size: 20px;
+}
+#navbar li {
+	font-size: 1.25vw;
 }
 .navbar-nav li a {
  line-height: 35px;
@@ -85,6 +88,9 @@
     color: #0a0c12;
     background-color: #ffffff;
   }
+	#navbar li {
+		font-size: 1vw;
+	}
 }
 
 .navbar-default {
