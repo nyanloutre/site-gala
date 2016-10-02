@@ -18,16 +18,21 @@
 	<body>
 
 		<div class="row">
-			<div class="col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
+			<div class="col-md-2 col-xs-1 col-lg-2">
+				<div class="hidden-xs hidden-sm hidden-md">
+					<img class="img-responsive logo" id="logo-mini" src="{% static "blog/img/banderole.png" %}">
+				</div>
+			</div>
+			<div class="col-xs-10 col-md-8 col-lg-8">
 
 				{# Décompte petit écran #}
-				<div class="container-fluid hidden-lg">
+				<div class="col-lg-offset-6 container-fluid hidden-lg">
 					{% include "blog/chrono.html" %}
 				</div>
 
 				{# Bannière #}
 				<div class="row-fluid hidden-lg">
-					<img class="img-responsive logo" src="{% static "blog/img/banderole.png" %}">
+					<img class="img-responsive logo" id="logo-mobile" src="{% static "blog/img/banderole.png" %}">
 				</div>
 
 				<div class="visible-lg-inline">
@@ -51,9 +56,6 @@
 			{# Liens sociaux desktop #}
 			<div class="col-md-2 col-sm-1">
 
-				<div class="hidden-xs hidden-sm hidden-md">
-					<img class="img-responsive logo" id="logo-mini" src="{% static "blog/img/banderole.png" %}">
-				</div>
 				<div class="hidden-sm hidden-xs">
 					<div class="social-mini">
 						{% include "blog/media.html" %}
@@ -84,7 +86,7 @@
 				</div>
 
 				{# Liens sociaux mobile #}
-				<div class="container-fluid visible-xs visible-sm">
+				<div class="container-fluid visible-xs visible-sm social-mobile">
 					<br>
 					{% include "blog/media.html" %}
 				</div>
