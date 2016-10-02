@@ -2,7 +2,7 @@
 * @Author: klmp200
 * @Date:   2016-07-06 15:42:59
 * @Last Modified by:   klmp200
-* @Last Modified time: 2016-10-02 20:51:56
+* @Last Modified time: 2016-10-02 22:39:03
 */
 
 @import 'https://fonts.googleapis.com/css?family=Raleway';
@@ -101,6 +101,8 @@ hr {
 }
 
 #logo-mini {
+	margin-left: 20px;
+	margin-top: 20px;
 }
 
 #logo-mobile {
