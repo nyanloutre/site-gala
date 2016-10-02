@@ -2,14 +2,15 @@
 * @Author: klmp200
 * @Date:   2016-07-06 15:42:59
 * @Last Modified by:   klmp200
-* @Last Modified time: 2016-10-02 01:10:11
+* @Last Modified time: 2016-10-02 20:51:56
 */
 
 @import 'https://fonts.googleapis.com/css?family=Raleway';
 @import 'https://fonts.googleapis.com/css?family=Cinzel';
 
 body {
-	background-image: url("/gala/static/blog/img/background.jpg");
+	// background-image: url("/gala/static/blog/img/background.jpg");
+	background-image: linear-gradient(to top left, rgb(8, 58, 117), rgb(13, 26, 41));
 	background-repeat: repeat;
 	background-attachment: fixed;
 	font-family: 'Roboto', sans-serif;
@@ -82,7 +83,8 @@ hr {
 	// background-color: #5A6AFF;
 	font-family: 'Cinzel', serif;
 	color: #ffffff;
-	font-size: 3.5em;
+	// font-size: 3.5em;
+	font-size: 4em;
 }
 
 .days {
@@ -99,7 +101,10 @@ hr {
 }
 
 #logo-mini {
-	margin-bottom: 60px;
+}
+
+#logo-mobile {
+	margin-bottom: 10px;
 }
 
 
@@ -145,17 +150,29 @@ hr {
 	background-color: #ffffff;
 }
 
-@media (min-width: 992px) {
-	.social-mini {
-		padding: 20px;
+.social-mini {
+	margin-top: 250px;
+}
+
+@media (min-width: 1200px){
+	.social-mini > div > div.row {
+		padding-left: 30%;
+		padding-right: 30%;
 	}
 }
 
-@media (min-width: 1200px) {
-	.social-mini {
-		// padding: 40px;
+@media (min-width: 992px) {
+	.social-mini > div > div.row {
+		padding-left: 20%;
+		padding-right: 20%;
 	}
 }
+
+// @media (min-width: 1200px) {
+// 	.social-mini {
+// 		// padding: 40px;
+// 	}
+// }
 
 /*
 * Gestion des liens

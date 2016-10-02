@@ -2,11 +2,15 @@
 * @Author: klmp200
 * @Date:   2016-07-10 16:06:30
 * @Last Modified by:   klmp200
-* @Last Modified time: 2016-10-02 01:36:11
+* @Last Modified time: 2016-10-02 20:55:56
 */
 
 #navbar {
   border-radius: 10px 10px 0 0;
+  font-size: 1.5em;
+}
+.navbar-nav li a {
+ line-height: 35px;
 }
 .navbar-default {
   background-color: #0a0c12;
@@ -77,6 +81,11 @@
     color: #0a0c12;
     background-color: #ffffff;
   }
+}
+
+.navbar-default {
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .navbar-default-gala {
