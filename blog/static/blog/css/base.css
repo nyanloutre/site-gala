@@ -9,15 +9,18 @@
 @import 'https://fonts.googleapis.com/css?family=Cinzel';
 
 body {
-	// background-image: url("/gala/static/blog/img/background.jpg");
-	background-image: linear-gradient(to top left, rgb(8, 58, 117), rgb(13, 26, 41));
-	background-repeat: repeat;
-	background-attachment: fixed;
+	background-image: url("/gala/static/blog/img/background.svg");
+	// background-image: linear-gradient(to top left, rgb(8, 58, 117), rgb(13, 26, 41));
+	background-attachment: no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
 	font-family: 'Roboto', sans-serif;
 }
 
 .content {
-	background-color: #eee;
+	background-color: #DEDEB1;
 	border-radius: 10px;
 	// border: 3px #b2810e solid;
 }
@@ -57,13 +60,6 @@ hr {
     margin-bottom: 25%;
 }
 
-.chronoBloc {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	text-align: center;
-	display: block;
-}
-
 @media (min-width: 1200px) {
 	.chronoBloc {
 		margin-top: 10px;
@@ -77,6 +73,17 @@ hr {
 		padding-top: 5px;
 		padding-bottom: 5px;
 	}
+}
+
+.main-title {
+	text-align: center;
+	font-family: 'Cinzel', serif;
+	color: #ffffff;
+	font-size: 4em;
+}
+
+h1 {
+	font-size: 1em;
 }
 
 .chrono {
@@ -96,8 +103,10 @@ hr {
 
 .logo {
 	// background-color: rgba(255, 255, 255, 0.8);
-	min-width: 100%;
-	max-height: 350px;
+	max-height: 300px;
+	max-width: 100%;
+	height: 200px;
+	width:auto;
 }
 
 #logo-mini {
@@ -106,6 +115,7 @@ hr {
 }
 
 #logo-mobile {
+	margin: auto;
 	margin-bottom: 10px;
 }
 
@@ -120,16 +130,6 @@ hr {
 	padding-bottom: 20px;
 	text-align: center;
 	display: block;
-}
-
-.youtube {
-	background-color: #EB9388;
-	color: #ffffff;
-}
-
-.youtube:hover {
-	background-color: #ffffff;
-	color: #DD4B39;
 }
 
 .twitter {

@@ -5,7 +5,10 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8">
-		<title>Gala 2016</title>
+		<title> XXIIIe Convention du Troll Penché</title>
+
+
+
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 		<link href="{% static "blog/css/base.css" %}" rel="stylesheet">
@@ -18,21 +21,21 @@
 	<body>
 
 		<div class="row">
-			<div class="col-md-2 col-xs-1 col-lg-2">
+			<div class="col-xs-1 col-md-3 col-lg-3">
 				<div class="hidden-xs hidden-sm hidden-md">
-					<img class="img-responsive logo" id="logo-mini" src="{% static "blog/img/banderole.png" %}">
+					<img class="img-responsive logo" id="logo-mini" src="{% static "blog/img/troll.png"%}">
 				</div>
 			</div>
-			<div class="col-xs-10 col-md-8 col-lg-8">
 
-				{# Décompte petit écran #}
-				<div class="col-lg-offset-6 container-fluid hidden-lg">
-					{% include "blog/chrono.html" %}
-				</div>
+			<div class = "col-xs-12 col-md-6 col-lg-6 main-title">
+				<h1><em>Convention du Troll Penché</em></h1>
+			</div>
+
+			<div class="col-xs-10 col-md-3 col-lg-3">
 
 				{# Bannière #}
 				<div class="row-fluid hidden-lg">
-					<img class="img-responsive logo" id="logo-mobile" src="{% static "blog/img/banderole.png" %}">
+					<img class="img-responsive logo" id="logo-mobile" src="{% static "blog/img/troll.png"%}">
 				</div>
 
 				<div class="visible-lg-inline">
@@ -41,20 +44,13 @@
 
 			</div>
 
-				{# Décompte grand écran #}
-
-				<span class="visible-lg-inline">
-					<div class="col-lg-2">
-						{% include "blog/chrono.html" %}
-					</div>
-				</span>
-
 		</div>
+
 
 		<div class="row">
 
 			{# Liens sociaux desktop #}
-			<div class="col-md-2 col-sm-1">
+			<div class="col-md-1 col-sm-1">
 
 				<div class="hidden-sm hidden-xs">
 					<div class="social-mini">
@@ -65,7 +61,7 @@
 			</div>
 
 			{# contenu #}
-			<div class="col-xs-offset-1 col-sm-offset-0 col-md-8 col-xs-10">
+			<div class="col-xs-offset-1 col-sm-offset-0 col-md-10 col-xs-10">
 
 				<div class="container-fluid content">
 					<div class="row">

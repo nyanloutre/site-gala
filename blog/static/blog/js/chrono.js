@@ -12,10 +12,10 @@ function SetChrono(file) {
 	var now = new Date();
 	var gala = new Date();
 	var diff = 0;
-
 	$.getJSON(file, function(data) {
-
+		alert("test");
 		gala.setFullYear(data.year, data.month - 1, data.day);
+		alert(gala);
 		diff = gala.getTime() - now.getTime();
 		// Il faut retirer 1 au mois puisque l'indice commence à 0
 		diff = Math.floor(diff / (1000 * 60 * 60 * 24));

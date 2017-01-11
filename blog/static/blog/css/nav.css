@@ -6,7 +6,7 @@
 */
 
 #navbar {
-  border-radius: 10px 10px 0 0;
+  border-radius: 0;
   font-size: 20px;
 }
 #navbar li {
@@ -16,8 +16,8 @@
  line-height: 35px;
 }
 .navbar-default {
-  background-color: #0a0c12;
-  border-color: #0a0c12;;
+  background-color: #CAC291;
+  border-color: #CAC291;
 }
 .navbar-default .navbar-brand {
   color: #ffffff;
@@ -30,31 +30,31 @@
   color: #ffffff;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #ffffff;
+  color: #0a0c12;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #0a0c12;
-  background-color: #ffffff;
+  background-color: #CAC291;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #0a0c12;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #CAC291;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   color: #0a0c12;
-  background-color: #ffffff;
+  background-color: #CAC291;
 }
 .navbar-default .navbar-toggle {
   border-color: #ffffff;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #ffffff;
+  background-color: #BCBC95;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #ffffff;
