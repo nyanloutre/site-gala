@@ -9,7 +9,6 @@
 @import 'https://fonts.googleapis.com/css?family=Cinzel';
 
 body {
-	// background-image: url("/gala/static/blog/img/background.jpg");
 	background-image: linear-gradient(to top left, rgb(8, 58, 117), rgb(13, 26, 41));
 	background-repeat: repeat;
 	background-attachment: fixed;
