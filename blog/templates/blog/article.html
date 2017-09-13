@@ -3,8 +3,7 @@
 
 {% block body %}
 
-    <h1>{{article.title}}</h1>
-
+    <h2>{{article.title}}</h2>
     {{article.content|markdown:"trusted"}}
 
 {% endblock %}

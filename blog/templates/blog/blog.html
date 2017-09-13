@@ -9,9 +9,8 @@
     <div class="article">
 
         <a href="{{article.get_absolute_url}}">
-            <h1>{{article.title|title}}</h1>
+            <h2>{{article.title|title}}</h2>
         </a>
-
         {{article.content|markdown:"trusted"}}
 
     </div>
