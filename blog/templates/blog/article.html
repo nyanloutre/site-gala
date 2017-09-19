@@ -2,8 +2,8 @@
 {% load markdown_deux_tags %}
 
 {% block body %}
-
+    <br><br>
     <h2>{{article.title}}</h2>
-    {{article.content|markdown:"trusted"}}
+    <article>{{article.content|markdown:"trusted"}}</article>
 
 {% endblock %}

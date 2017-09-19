@@ -152,6 +152,108 @@ h1 {
 }
 h2 {
   color: #3a3838;
-  padding: 8px;
+  padding: 0.25em;
+  padding-left: 1em;
   text-align: left;
 }
+article {
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-bottom: 2em;
+  padding-top: 1.5em;
+}
+.article-preview {
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-bottom: 2em;
+}
+.social-icons {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.social-icons i {
+    font-size: 1em;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 3.25;
+    margin: 0 0.5em 0;
+    border-radius: 50%;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    border:  1px solid #616161;
+}
+.social-icons i:hover {
+	background: #897e6c;
+    color: #fff;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+	border-color:#897e6c;
+}
+.credit {
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 0;
+  background-color: #2d2d30;
+  border: 0;
+  letter-spacing: 4px;
+  opacity: 0.9;
+}
+
+/*-- Timer --*/
+.countdown {
+  background: url(../img/bandeau.jpg) no-repeat center fixed;
+  background-size: cover;
+  padding-top:20em;
+  min-height: 550px;
+  text-align: center;
+}
+.simply-section {
+	display: inline-block;
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+
+.countdown-timer-w3laits h3 {
+    font-weight:200;
+	  font-size:3em;
+    margin-bottom: 40px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 3px;
+
+}
+.countdown-timer-w3laits h4 {
+    margin-bottom:30px;
+    color: #fff;
+    text-align: center;
+    letter-spacing:3px;
+	font-size:2em;
+	text-transform:uppercase;
+}
+
+.countdown-timer-w3laits h3  span{
+	   color: #ff8c00;
+}
+span.simply-amount {
+	  font-size:7em;
+    line-height: 0;
+    color: #fff;
+}
+span.simply-word {
+    font-size:15px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    margin-left: 5px;
+    text-transform: uppercase;
+    color: #eee;
+	  font-family: 'Open Sans', sans-serif;
+}
+/*-- //Timer --*/
