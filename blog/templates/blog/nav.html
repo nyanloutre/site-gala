@@ -1,27 +1,22 @@
 {% load set_var %}
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gala-navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="../"><img src="/gala/static/blog/img/logo.png" alt="" width="40" height="25"></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-				{% for page in nav.pages %}
+<nav class="navbar fixed-top navbar-expand-lg">
+    <a class="navbar-brand" href="../"><img src="/gala/static/blog/img/logo.png" alt="" width="40" height="25"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_navbar" aria-controls="main_navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </button>
+      
+    <div class="collapse navbar-collapse justify-content-end" id="main_navbar">
+      <ul class="navbar-nav">
+        {% for page in nav.pages %}
 
-				{% set active = "" %}
-				{% if nav.path == page.get_absolute_url %}
-					{% set active = "active" %}
-				{% endif %}
+            {% set active = "" %}
+            {% if nav.path == page.get_absolute_url %}
+                    {% set active = "active" %}
+            {% endif %}
 
-				<li class="{{active}}"><a href="{{page.get_absolute_url}}">{{page.title}}</a></li>
+            <li class="{{active}} nav-item"><a class="nav-link" href="{{page.get_absolute_url}}">{{page.title}}</a></li>
 
-				{% endfor %}
+        {% endfor %}
       </ul>
     </div>
-  </div>
 </nav>

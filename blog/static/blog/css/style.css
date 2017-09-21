@@ -1,7 +1,23 @@
+body, html {
+    height: 100%;
+}
+
 body {
     font: 400 15px/1.8 Lato, sans-serif;
     color: #777;
 }
+
+header {
+    height: 75%;
+    min-height: 400px;
+    
+    background-image: url(../img/bandeau.jpg);
+    
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 h3, h4 {
     margin: 10px 0 30px 0;
     letter-spacing: 10px;
@@ -96,9 +112,7 @@ iframe{
 }
 .navbar {
     font-family: Montserrat, sans-serif;
-    margin-bottom: 0;
     background-color: #2d2d30;
-    border: 0;
     font-size: 20px !important;
     letter-spacing: 4px;
     opacity: 0.9;
@@ -113,18 +127,8 @@ iframe{
     color: #fff !important;
     background-color: #29292c !important;
 }
-.navbar-default .navbar-toggle {
-    border-color: transparent;
-}
-.open .dropdown-toggle {
-    color: #fff;
-    background-color: #555 !important;
-}
-.dropdown-menu li a {
-    color: #000 !important;
-}
-.dropdown-menu li a:hover {
-    background-color: red !important;
+.navbar-toggler {
+    color: #ddd;
 }
 footer {
     background-color: #2d2d30;
@@ -208,17 +212,8 @@ article {
 
 /*-- Timer --*/
 .countdown {
-  background: url(../img/bandeau.jpg) no-repeat center fixed;
-  background-size: cover;
-  padding-top:20em;
-  min-height: 550px;
-  text-align: center;
-}
-.simply-section {
-	display: inline-block;
-	width: 25%;
-	float: left;
-	text-align: center;
+  width: 100%;
+  height: 100%;
 }
 
 .countdown-timer-w3laits h3 {
@@ -242,13 +237,12 @@ article {
 .countdown-timer-w3laits h3  span{
 	   color: #ff8c00;
 }
-span.simply-amount {
-	  font-size:7em;
-    line-height: 0;
+span.countdown-amount {
+    font-size:4rem;
     color: #fff;
 }
-span.simply-word {
-    font-size:15px;
+span.countdown-word {
+    font-size:0.5rem;
     letter-spacing: 3px;
     font-weight: 500;
     margin-left: 5px;
@@ -256,4 +250,18 @@ span.simply-word {
     color: #eee;
 	  font-family: 'Open Sans', sans-serif;
 }
+
+span.countdown-amount, span.countdown-word {
+    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 40px #1d2951 , 0 0 70px #1d2951, 0 0 100px #1d2951;
+}
+
+@media (min-width: 576px) {
+    span.countdown-amount {
+        font-size:7rem;
+    }
+    span.countdown-word {
+        font-size:1rem;
+    }
+}
+
 /*-- //Timer --*/
